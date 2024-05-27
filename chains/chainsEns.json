@@ -1,0 +1,171 @@
+[
+  {
+    "chainId": 0,
+    "name": "btc",
+    "fullName": "Bitcoin",
+    "coinType": 0
+  },
+  {
+    "chainId": 1,
+    "name": "eth",
+    "fullName": "Ethereum",
+    "coinType": 60
+  },
+  {
+    "chainId": 10,
+    "name": "op",
+    "fullName": "Optimism",
+    "coinType": 2147483658
+  },
+  {
+    "chainId": 25,
+    "name": "cro",
+    "fullName": "Cronos",
+    "coinType": 2147483673
+  },
+  {
+    "chainId": 56,
+    "name": "bsc",
+    "fullName": "BNB Smart Chain",
+    "coinType": 2147483704
+  },
+  {
+    "chainId": 60,
+    "name": "go",
+    "fullName": "GoChain",
+    "coinType": 2147483708
+  },
+  {
+    "chainId": 61,
+    "name": "etc",
+    "fullName": "Ethereum Classic ",
+    "coinType": 2147483709
+  },
+  {
+    "chainId": 88,
+    "name": "tomo",
+    "fullName": "TomoChain",
+    "coinType": 2147483736
+  },
+  { "chainId": 99, "name": "poa", "fullName": "POA", "coinType": 2147483747 },
+  {
+    "chainId": 100,
+    "name": "gno",
+    "fullName": "Gnosis",
+    "coinType": 2147483748
+  },
+  {
+    "chainId": 108,
+    "name": "tt",
+    "fullName": "ThunderCore",
+    "coinType": 2147483756
+  },
+  {
+    "chainId": 137,
+    "name": "matic",
+    "fullName": "Polygon",
+    "coinType": 2147483785
+  },
+  {
+    "chainId": 169,
+    "name": "manta",
+    "fullName": "Manta Pacific",
+    "coinType": 2147483817
+  },
+  {
+    "chainId": 246,
+    "name": "ewt",
+    "fullName": "Energy Web",
+    "coinType": 2147483894
+  },
+  {
+    "chainId": 250,
+    "name": "ftm",
+    "fullName": "Fantom Opera",
+    "coinType": 2147483898
+  },
+  {
+    "chainId": 288,
+    "name": "boba",
+    "fullName": "Boba",
+    "coinType": 2147483936
+  },
+  {
+    "chainId": 324,
+    "name": "zksync",
+    "fullName": "zkSync",
+    "coinType": 2147483972
+  },
+  {
+    "chainId": 361,
+    "name": "theta",
+    "fullName": "Theta",
+    "coinType": 2147484009
+  },
+  {
+    "chainId": 820,
+    "name": "clo",
+    "fullName": "Callisto",
+    "coinType": 2147484468
+  },
+  {
+    "chainId": 1088,
+    "name": "metis",
+    "fullName": "Metis",
+    "coinType": 2147484736
+  },
+  {
+    "chainId": 5000,
+    "name": "mantle",
+    "fullName": "Mantle",
+    "coinType": 2147488648
+  },
+  {
+    "chainId": 8453,
+    "name": "base",
+    "fullName": "Base",
+    "coinType": 2147492101
+  },
+  {
+    "chainId": 39797,
+    "name": "nrg",
+    "fullName": "Energi",
+    "coinType": 2147523445
+  },
+  {
+    "chainId": 42161,
+    "name": "arb1",
+    "fullName": "Arbitrum One",
+    "coinType": 2147525809
+  },
+  {
+    "chainId": 42220,
+    "name": "celo",
+    "fullName": "Celo",
+    "coinType": 2147525868
+  },
+  {
+    "chainId": 43114,
+    "name": "avaxc",
+    "fullName": "Avalanche C-Chain",
+    "coinType": 2147526762
+  },
+  {
+    "chainId": 59144,
+    "name": "linea",
+    "fullName": "Linea",
+    "coinType": 2147542792
+  },
+  {
+    "chainId": 534352,
+    "name": "scr",
+    "fullName": "Scroll",
+    "coinType": 2148018000
+  },
+  {
+    "chainId": 7777777,
+    "name": "zora",
+    "fullName": "Zora",
+    "coinType": 2155261425
+  }
+]

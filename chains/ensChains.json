@@ -1,0 +1,488 @@
+[
+  {
+    "name": "Ethereum Mainnet",
+    "chain": "ETH",
+    "icon": "ethereum",
+    "rpc": [
+      "https://mainnet.infura.io/v3/${INFURA_API_KEY}",
+      "wss://mainnet.infura.io/ws/v3/${INFURA_API_KEY}",
+      "https://api.mycryptoapi.com/eth",
+      "https://cloudflare-eth.com",
+      "https://ethereum-rpc.publicnode.com",
+      "wss://ethereum-rpc.publicnode.com",
+      "https://mainnet.gateway.tenderly.co",
+      "wss://mainnet.gateway.tenderly.co",
+      "https://rpc.blocknative.com/boost",
+      "https://rpc.flashbots.net",
+      "https://rpc.flashbots.net/fast",
+      "https://rpc.mevblocker.io",
+      "https://rpc.mevblocker.io/fast",
+      "https://rpc.mevblocker.io/noreverts",
+      "https://rpc.mevblocker.io/fullprivacy",
+      "https://eth.drpc.org",
+      "wss://eth.drpc.org"
+    ],
+    "features": [
+      {
+        "name": "EIP155"
+      },
+      {
+        "name": "EIP1559"
+      }
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "infoURL": "https://ethereum.org",
+    "shortName": "eth",
+    "chainId": 1,
+    "networkId": 1,
+    "slip44": 60,
+    "ens": {
+      "registry": "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e"
+    },
+    "explorers": [
+      {
+        "name": "etherscan",
+        "url": "https://etherscan.io",
+        "standard": "EIP3091"
+      },
+      {
+        "name": "blockscout",
+        "url": "https://eth.blockscout.com",
+        "icon": "blockscout",
+        "standard": "EIP3091"
+      },
+      {
+        "name": "dexguru",
+        "url": "https://ethereum.dex.guru",
+        "icon": "dexguru",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
+    "name": "Ropsten",
+    "title": "Ethereum Testnet Ropsten",
+    "chain": "ETH",
+    "rpc": [
+      "https://ropsten.infura.io/v3/${INFURA_API_KEY}",
+      "wss://ropsten.infura.io/ws/v3/${INFURA_API_KEY}"
+    ],
+    "faucets": [
+      "http://fauceth.komputing.org?chain=3&address=${ADDRESS}",
+      "https://faucet.ropsten.be?${ADDRESS}"
+    ],
+    "nativeCurrency": {
+      "name": "Ropsten Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "infoURL": "https://github.com/ethereum/ropsten",
+    "shortName": "rop",
+    "chainId": 3,
+    "networkId": 3,
+    "slip44": 1,
+    "ens": {
+      "registry": "0x112234455c3a32fd11230c42e7bccd4a84e02010"
+    },
+    "explorers": [
+      {
+        "name": "etherscan",
+        "url": "https://ropsten.etherscan.io",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
+    "name": "Rinkeby",
+    "title": "Ethereum Testnet Rinkeby",
+    "chain": "ETH",
+    "rpc": [
+      "https://rinkeby.infura.io/v3/${INFURA_API_KEY}",
+      "wss://rinkeby.infura.io/ws/v3/${INFURA_API_KEY}"
+    ],
+    "faucets": [
+      "http://fauceth.komputing.org?chain=4&address=${ADDRESS}",
+      "https://faucet.rinkeby.io"
+    ],
+    "nativeCurrency": {
+      "name": "Rinkeby Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "infoURL": "https://www.rinkeby.io",
+    "shortName": "rin",
+    "chainId": 4,
+    "networkId": 4,
+    "slip44": 1,
+    "ens": {
+      "registry": "0xe7410170f87102df0055eb195163a03b7f2bff4a"
+    },
+    "explorers": [
+      {
+        "name": "etherscan-rinkeby",
+        "url": "https://rinkeby.etherscan.io",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
+    "name": "Goerli",
+    "title": "Ethereum Testnet Goerli",
+    "chain": "ETH",
+    "rpc": [
+      "https://goerli.infura.io/v3/${INFURA_API_KEY}",
+      "wss://goerli.infura.io/v3/${INFURA_API_KEY}",
+      "https://rpc.goerli.mudit.blog/",
+      "https://ethereum-goerli-rpc.publicnode.com",
+      "wss://ethereum-goerli-rpc.publicnode.com",
+      "https://goerli.gateway.tenderly.co",
+      "wss://goerli.gateway.tenderly.co"
+    ],
+    "faucets": [
+      "http://fauceth.komputing.org?chain=5&address=${ADDRESS}",
+      "https://goerli-faucet.slock.it?address=${ADDRESS}",
+      "https://faucet.goerli.mudit.blog"
+    ],
+    "nativeCurrency": {
+      "name": "Goerli Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "infoURL": "https://goerli.net/#about",
+    "shortName": "gor",
+    "chainId": 5,
+    "networkId": 5,
+    "slip44": 1,
+    "ens": {
+      "registry": "0x112234455c3a32fd11230c42e7bccd4a84e02010"
+    },
+    "explorers": [
+      {
+        "name": "etherscan-goerli",
+        "url": "https://goerli.etherscan.io",
+        "standard": "EIP3091"
+      },
+      {
+        "name": "blockscout-goerli",
+        "url": "https://eth-goerli.blockscout.com",
+        "icon": "blockscout",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
+    "name": "Defi Oracle Meta Mainnet",
+    "chain": "dfiometa",
+    "icon": "defioraclemeta",
+    "rpc": [
+      "https://rpc.defi-oracle.io",
+      "wss://wss.defi-oracle.io"
+    ],
+    "features": [
+      {
+        "name": "EIP155"
+      },
+      {
+        "name": "EIP1559"
+      }
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "infoURL": "https://info.defi-oracle.io/",
+    "shortName": "dfio-meta-main",
+    "chainId": 138,
+    "networkId": 1,
+    "slip44": 60,
+    "ens": {
+      "registry": "0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85"
+    },
+    "explorers": [
+      {
+        "name": "Blockscout Explorer",
+        "url": "https://blockscout.defi-oracle.io",
+        "standard": "none"
+      },
+      {
+        "name": "Quorum Explorer",
+        "url": "https://explorer.defi-oracle.io",
+        "standard": "none"
+      }
+    ]
+  },
+  {
+    "name": "PulseChain",
+    "shortName": "pls",
+    "chain": "PLS",
+    "chainId": 369,
+    "networkId": 369,
+    "infoURL": "https://pulsechain.com/",
+    "rpc": [
+      "https://rpc.pulsechain.com",
+      "wss://rpc.pulsechain.com",
+      "https://pulsechain-rpc.publicnode.com",
+      "wss://pulsechain-rpc.publicnode.com",
+      "https://rpc-pulsechain.g4mm4.io",
+      "wss://rpc-pulsechain.g4mm4.io"
+    ],
+    "slip44": 60,
+    "features": [
+      {
+        "name": "EIP155"
+      },
+      {
+        "name": "EIP1559"
+      }
+    ],
+    "faucets": [],
+    "ens": {
+      "registry": "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e"
+    },
+    "status": "active",
+    "nativeCurrency": {
+      "name": "Pulse",
+      "symbol": "PLS",
+      "decimals": 18
+    },
+    "explorers": [
+      {
+        "name": "blockscout",
+        "url": "https://scan.pulsechain.com",
+        "icon": "blockscout",
+        "standard": "EIP3091"
+      },
+      {
+        "name": "otterscan",
+        "url": "https://otter.pulsechain.com",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
+    "name": "PulseChain Testnet v4",
+    "shortName": "t4pls",
+    "chain": "t4PLS",
+    "chainId": 943,
+    "networkId": 943,
+    "icon": "pulsechain",
+    "infoURL": "https://pulsechain.com",
+    "rpc": [
+      "https://rpc.v4.testnet.pulsechain.com",
+      "wss://rpc.v4.testnet.pulsechain.com",
+      "https://pulsechain-testnet-rpc.publicnode.com",
+      "wss://pulsechain-testnet-rpc.publicnode.com",
+      "https://rpc-testnet-pulsechain.g4mm4.io",
+      "wss://rpc-testnet-pulsechain.g4mm4.io"
+    ],
+    "features": [
+      {
+        "name": "EIP155"
+      },
+      {
+        "name": "EIP1559"
+      }
+    ],
+    "faucets": [
+      "https://faucet.v4.testnet.pulsechain.com/"
+    ],
+    "ens": {
+      "registry": "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e"
+    },
+    "status": "active",
+    "slip44": 1,
+    "nativeCurrency": {
+      "name": "Test Pulse",
+      "symbol": "tPLS",
+      "decimals": 18
+    },
+    "explorers": [
+      {
+        "name": "blockscout",
+        "url": "https://scan.v4.testnet.pulsechain.com",
+        "icon": "blockscout",
+        "standard": "EIP3091"
+      },
+      {
+        "name": "blockscout",
+        "url": "https://otter-testnet-pulsechain.g4mm4.io",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
+    "name": "Defi Oracle Meta Testnet",
+    "chain": "dfiometatest",
+    "icon": "defioraclemeta",
+    "rpc": [
+      "https://rpc.public-2138.defi-oracle.io",
+      "wss://rpc.public-2138.defi-oracle.io"
+    ],
+    "features": [
+      {
+        "name": "EIP155"
+      },
+      {
+        "name": "EIP1559"
+      }
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "testEther",
+      "symbol": "tETH",
+      "decimals": 18
+    },
+    "infoURL": "https://defi-oracle.io/",
+    "shortName": "dfio-meta-test",
+    "chainId": 2138,
+    "networkId": 21,
+    "slip44": 1,
+    "ens": {
+      "registry": "0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85"
+    },
+    "explorers": [
+      {
+        "name": "Quorum Explorer",
+        "url": "https://public-2138.defi-oracle.io",
+        "standard": "none"
+      }
+    ]
+  },
+  {
+    "name": "MiYou Mainnet",
+    "chain": "MiYou Chain",
+    "icon": "miyou",
+    "faucets": [],
+    "rpc": [
+      "https://blockchain.miyou.io",
+      "https://blockchain.miyoulab.com"
+    ],
+    "features": [
+      {
+        "name": "EIP155"
+      },
+      {
+        "name": "EIP1559"
+      }
+    ],
+    "nativeCurrency": {
+      "name": "Miyou",
+      "symbol": "MY",
+      "decimals": 18
+    },
+    "infoURL": "https://www.miyou.io",
+    "shortName": "MiYou",
+    "chainId": 30088,
+    "networkId": 30088,
+    "slip44": 60,
+    "ens": {
+      "registry": "0xFEfa9B3061435977424DD947E756566cFB60473E"
+    },
+    "explorers": [
+      {
+        "name": "MiYou block explorer",
+        "url": "https://myscan.miyou.io",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
+    "name": "Toronet Testnet",
+    "chain": "Toronet",
+    "icon": "toronet",
+    "rpc": [
+      "http://testnet.toronet.org/rpc"
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "Toro",
+      "symbol": "TORO",
+      "decimals": 18
+    },
+    "infoURL": "https://toronet.org",
+    "shortName": "ToronetTestnet",
+    "chainId": 54321,
+    "networkId": 54321,
+    "slip44": 1,
+    "ens": {
+      "registry": "0x059C474f26D65B0458F9da10A649a7322aB02C09"
+    },
+    "explorers": [
+      {
+        "name": "toronet_explorer",
+        "url": "https://testnet.toronet.org",
+        "standard": "none"
+      }
+    ]
+  },
+  {
+    "name": "Toronet Mainnet",
+    "chain": "Toronet",
+    "icon": "toronet",
+    "rpc": [
+      "http://toronet.org/rpc"
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "Toro",
+      "symbol": "TORO",
+      "decimals": 18
+    },
+    "infoURL": "https://toronet.org",
+    "shortName": "Toronet",
+    "chainId": 77777,
+    "networkId": 77777,
+    "ens": {
+      "registry": "0x1f45a71f4aAD769E27c969c4359E0e250C67165c"
+    },
+    "explorers": [
+      {
+        "name": "toronet_explorer",
+        "url": "https://toronet.org/explorer",
+        "standard": "none"
+      }
+    ]
+  },
+  {
+    "name": "Harmony Mainnet Shard 0",
+    "chain": "Harmony",
+    "rpc": [
+      "https://api.harmony.one",
+      "https://a.api.s0.t.hmny.io",
+      "https://api.s0.t.hmny.io",
+      "https://rpc.ankr.com/harmony",
+      "https://harmony.api.onfinality.io/public",
+      "https://1rpc.io/one",
+      "https://harmony-0.drpc.org",
+      "wss://harmony-0.drpc.org"
+    ],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "ONE",
+      "symbol": "ONE",
+      "decimals": 18
+    },
+    "infoURL": "https://www.harmony.one/",
+    "slip44": 1023,
+    "ens": {
+      "registry": "0x4cd2563118e57b19179d8dc033f2b0c5b5d69ff5"
+    },
+    "shortName": "hmy-s0",
+    "chainId": 1666600000,
+    "networkId": 1666600000,
+    "explorers": [
+      {
+        "name": "Harmony Block Explorer",
+        "url": "https://explorer.harmony.one",
+        "standard": "EIP3091"
+      }
+    ]
+  }
+]
