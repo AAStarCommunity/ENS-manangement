@@ -32,7 +32,7 @@ type AddressObj = {
 };
 
 type Item = {
-  _id: string;
+  id: string;
   node: string;
   text: { [key: string]: string };
   contenthash: string;
@@ -248,7 +248,7 @@ export default function Home() {
 
   const handleClickUpdateShowModel = (id: string) => {
     return function () {
-      const ensItem: Item = items.find((item) => item._id === id) as Item;
+      const ensItem: Item = items.find((item) => item.id === id) as Item;
       const addressesArr = Object.entries(ensItem.address);
       const newAddresses: AddressRecord[] = [];
       addressesArr.forEach((addr) => {
@@ -356,7 +356,7 @@ export default function Home() {
           <TableBody>
             {items.map((item, i) => (
               <TableRow
-                key={item._id}
+                key={item.id}
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               >
                 <TableCell component="th" scope="row">
@@ -378,14 +378,14 @@ export default function Home() {
                   <Button
                     sx={{ textTransform: 'none' }}
                     variant="outlined"
-                    onClick={handleClickDelete(item._id)}
+                    onClick={handleClickDelete(item.id)}
                   >
                     Delete
                   </Button>
                   <Button
                     sx={{ ml: 1, textTransform: 'none' }}
                     variant="contained"
-                    onClick={handleClickUpdateShowModel(item._id)}
+                    onClick={handleClickUpdateShowModel(item.id)}
                   >
                     Update
                   </Button>

@@ -1,7 +1,5 @@
-import { dbConnect } from "@/database";
-import { EnsDataModel } from '@/database/ens-data-model';
 
-dbConnect();
+import { addEns, updateEns } from '@/lib/utils/query';
 
 export async function POST(request: Request) {
     const body = await request.json();
@@ -10,13 +8,12 @@ export async function POST(request: Request) {
     try {
         if (body.id) {
             // update
-            res = await EnsDataModel.findByIdAndUpdate(body.id, body)
+            res = await updateEns(body)
         } else {
-            const ensData = new EnsDataModel(body)
-            res = await ensData.save({});
+            res = await addEns(body)
         }
     } catch (e) {
-        res = []
+        res = ''
     }
 
     return Response.json({ data: "ok" })

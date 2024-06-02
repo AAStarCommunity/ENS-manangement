@@ -4,18 +4,23 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npx prisma generate --no-engine && next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.18",
+    "@prisma/client": "5.14.0",
+    "@prisma/extension-accelerate": "^1.1.0",
     "axios": "^1.7.2",
     "content-hash": "^2.5.2",
-    "mongoose": "^8.4.0",
     "next": "14.2.3",
+    "prisma": "^5.14.0",
     "react": "^18",
     "react-dom": "^18"
   },
