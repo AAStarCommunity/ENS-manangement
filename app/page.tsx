@@ -89,7 +89,13 @@ export default function Home() {
   useEffect(() => {
     ~(async function () {
       try {
-        const res = await axios.get(`${apiUrl}/list`);
+        const res = await axios.get(`${apiUrl}/list`, {
+          headers: {
+            'Content-Type': 'application/json',
+            'Cache-Control': 'no-cache',
+            Pragma: 'no-cache',
+          },
+        });
         if (res.data && res.data.data) {
           setItems(res.data.data);
         }
@@ -238,7 +244,13 @@ export default function Home() {
     }
 
     axios
-      .post(`${apiUrl}/ens`, ensData)
+      .post(`${apiUrl}/ens`, ensData, {
+        headers: {
+          'Content-Type': 'application/json',
+          'Cache-Control': 'no-cache',
+          Pragma: 'no-cache',
+        },
+      })
       .then((res) => {
         setShow(false);
         setF5((v) => v + 1);
@@ -275,7 +287,17 @@ export default function Home() {
   const handleClickDelete = (id: string) => {
     return function () {
       axios
-        .post(`${apiUrl}/ens/delete`, { id })
+        .post(
+          `${apiUrl}/ens/delete`,
+          { id },
+          {
+            headers: {
+              'Content-Type': 'application/json',
+              'Cache-Control': 'no-cache',
+              Pragma: 'no-cache',
+            },
+          }
+        )
         .then((res) => {
           setShow(false);
           setF5((v) => v + 1);
