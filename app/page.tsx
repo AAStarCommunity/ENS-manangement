@@ -68,6 +68,8 @@ type TextRecord = {
   id: number;
 };
 
+const delayTime = 1000;
+
 export default function Home() {
   const [f5, setF5] = useState(0);
   const [node, setNode] = useState('');
@@ -252,10 +254,10 @@ export default function Home() {
         },
       })
       .then((res) => {
-        setShow(false);
         setTimeout(() => {
+          setShow(false);
           setF5((v) => v + 1);
-        }, 200);
+        }, delayTime);
       })
       .then((err) => console.error);
   };
@@ -301,10 +303,10 @@ export default function Home() {
           }
         )
         .then((res) => {
-          setShow(false);
           setTimeout(() => {
+            setShow(false);
             setF5((v) => v + 1);
-          }, 200);
+          }, delayTime);
         })
         .then((err) => console.error);
     };
