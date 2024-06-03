@@ -253,7 +253,9 @@ export default function Home() {
       })
       .then((res) => {
         setShow(false);
-        setF5((v) => v + 1);
+        setTimeout(() => {
+          setF5((v) => v + 1);
+        }, 200);
       })
       .then((err) => console.error);
   };
@@ -300,7 +302,9 @@ export default function Home() {
         )
         .then((res) => {
           setShow(false);
-          setF5((v) => v + 1);
+          setTimeout(() => {
+            setF5((v) => v + 1);
+          }, 200);
         })
         .then((err) => console.error);
     };

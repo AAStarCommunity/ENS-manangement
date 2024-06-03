@@ -1,5 +1,5 @@
 import prisma from "@/lib/db";
-import { CacheStrategy, Ens, EnsWithId } from "@/lib/types";
+import { Ens, EnsWithId } from "@/lib/types";
 
 export const getAll = async () => {
     const start = Date.now();
