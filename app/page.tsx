@@ -68,7 +68,7 @@ type TextRecord = {
   id: number;
 };
 
-const delayTime = 1000;
+const delayTime = 1500;
 
 export default function Home() {
   const [f5, setF5] = useState(0);
@@ -91,13 +91,7 @@ export default function Home() {
   useEffect(() => {
     ~(async function () {
       try {
-        const res = await axios.get(`${apiUrl}/list`, {
-          headers: {
-            'Content-Type': 'application/json',
-            'Cache-Control': 'no-cache',
-            Pragma: 'no-cache',
-          },
-        });
+        const res = await axios.get(`${apiUrl}/list`);
         if (res.data && res.data.data) {
           setItems(res.data.data);
         }
@@ -246,13 +240,7 @@ export default function Home() {
     }
 
     axios
-      .post(`${apiUrl}/ens`, ensData, {
-        headers: {
-          'Content-Type': 'application/json',
-          'Cache-Control': 'no-cache',
-          Pragma: 'no-cache',
-        },
-      })
+      .post(`${apiUrl}/ens`, ensData)
       .then((res) => {
         setTimeout(() => {
           setShow(false);
@@ -291,17 +279,7 @@ export default function Home() {
   const handleClickDelete = (id: string) => {
     return function () {
       axios
-        .post(
-          `${apiUrl}/ens/delete`,
-          { id },
-          {
-            headers: {
-              'Content-Type': 'application/json',
-              'Cache-Control': 'no-cache',
-              Pragma: 'no-cache',
-            },
-          }
-        )
+        .post(`${apiUrl}/ens/delete`, { id })
         .then((res) => {
           setTimeout(() => {
             setShow(false);
