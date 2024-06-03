@@ -1,13 +1,12 @@
 import prisma from "@/lib/db";
 import { CacheStrategy, Ens, EnsWithId } from "@/lib/types";
 
-export const getAll = async (strategy?: CacheStrategy) => {
+export const getAll = async () => {
     const start = Date.now();
 
     const result = await prisma.ens
         .findMany({
             // You can find the `cacheStrategy` options [here](https://www.prisma.io/docs/accelerate/caching#cache-strategies). The `cacheStrategy` can also be undefined, which would mean only connection pooling is being used.
-            cacheStrategy: strategy,
             orderBy: {
                 id: "asc",
             },
