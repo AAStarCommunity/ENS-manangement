@@ -68,8 +68,6 @@ type TextRecord = {
   id: number;
 };
 
-const delayTime = 1500;
-
 export default function Home() {
   const [f5, setF5] = useState(0);
   const [node, setNode] = useState('');
@@ -91,7 +89,7 @@ export default function Home() {
   useEffect(() => {
     ~(async function () {
       try {
-        const res = await axios.get(`${apiUrl}/list`);
+        const res = await axios.get(`${apiUrl}/list?t=${Date.now()}`);
         if (res.data && res.data.data) {
           setItems(res.data.data);
         }
@@ -242,10 +240,8 @@ export default function Home() {
     axios
       .post(`${apiUrl}/ens`, ensData)
       .then((res) => {
-        setTimeout(() => {
-          setShow(false);
-          setF5((v) => v + 1);
-        }, delayTime);
+        setShow(false);
+        setF5((v) => v + 1);
       })
       .then((err) => console.error);
   };
@@ -281,10 +277,8 @@ export default function Home() {
       axios
         .post(`${apiUrl}/ens/delete`, { id })
         .then((res) => {
-          setTimeout(() => {
-            setShow(false);
-            setF5((v) => v + 1);
-          }, delayTime);
+          setShow(false);
+          setF5((v) => v + 1);
         })
         .then((err) => console.error);
     };
