@@ -7,7 +7,7 @@ export async function GET(request: Request) {
     try {
         res = await getAll();
     } catch (e) {
-        res = []
+        return Response.json({ status: 'error', message: e })
     }
 
     return Response.json(res)

@@ -7,8 +7,8 @@ export async function POST(request: Request) {
     try {
         res = await deleteEns(body.id)
     } catch (e) {
-        res = 'error'
+        return Response.json({ status: 'error', message: e })
     }
 
-    return Response.json({ data: res })
+    return Response.json({ status: 'ok' })
 }

@@ -15,7 +15,6 @@ export const getAll = async () => {
 
     return {
         data: result?.data,
-        info: result.info,
         time: Date.now() - start,
     };
 };

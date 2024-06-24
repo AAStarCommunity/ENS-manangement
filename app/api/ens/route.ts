@@ -13,8 +13,8 @@ export async function POST(request: Request) {
             res = await addEns(body)
         }
     } catch (e) {
-        res = ''
+        return Response.json({ status: "error", message: res })
     }
 
-    return Response.json({ data: "ok" })
+    return Response.json({ status: "ok" })
 }
